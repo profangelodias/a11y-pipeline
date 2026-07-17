@@ -18,7 +18,7 @@ async function auditarAcessibilidade() {
         const htmlContent = fs.readFileSync('./index.html', 'utf8');
 
         // Configura o modelo
-        const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
+        const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
         // Prompt estratégico e blindado para a demonstração
         const prompt = `
