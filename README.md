@@ -1,2 +1,8 @@
-# a11y-pipeline
-Repositório que roda o fluxo completo dos código do a11y-bug e a11y-real com gitaction e IA.
+a11y-pipeline/
+├── .github/
+│   └── workflows/
+│       └── a11y-check.yml
+├── scripts/
+│   └── gemini-a11y-auditor.js
+├── index.html (O arquivo que sofrerá as alterações nas PRs)
+└── package.json
