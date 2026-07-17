@@ -1,11 +1,10 @@
 {
   "name": "a11y-pipeline",
   "version": "1.0.0",
-  "description": "Pipeline de auditoria de acessibilidade com IA Generativa",
   "scripts": {
-    "test:a11y": "node scripts/gemini-a11y-auditor.js"
+    "test:a11y": "node scripts/openai-a11y-auditor.js"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.11.0"
+    "openai": "^4.0.0"
   }
 }

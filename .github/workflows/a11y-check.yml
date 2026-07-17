@@ -20,7 +20,12 @@ jobs:
       - name: Instalar Dependências
         run: npm install
 
-      - name: Executar Auditoria com Gemini API
+      # - name: Executar Auditoria com Gemini API
+      #   env:
+      #     GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      #   run: npm run test:a11y
+
+      - name: Executar Auditoria com OpenAI
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: npm run test:a11y
